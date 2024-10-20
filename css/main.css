@@ -153,6 +153,7 @@ img {
 
 .header .lang .lang-content {
   color: #fff;
+  
   display: flex;
   align-items: center;
   gap: 15px;
@@ -166,7 +167,7 @@ img {
 
 
 
-.header .lang h4 {
+.header .lang span {
   color: var(--ffffff, #fff);
   font-size: 18px;
   font-style: normal;
