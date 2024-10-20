@@ -85,7 +85,7 @@ img {
   letter-spacing: 0.7px;
   background-color: var(--main-color);
   position: relative;
-  z-index: 1;
+  z-index: 5;
 }
 
 .header #bg-images {
@@ -181,6 +181,23 @@ img {
 .header .lang .img {
   width: 32px;
   height: 24px;
+}
+.header .imageTopRight {
+  background-color: transparent;
+}
+
+.header .imageTopRight img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 240px;
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .header .imageTopRight img {
+    width: 150px;
+  }
 }
 
 .header .header-content {
@@ -510,6 +527,11 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  direction: ltr;
+}
+
+.speakers .speakers-cust .customers.ar {
+  direction: rtl;
 }
 
 @media (max-width: 1400px) {
@@ -667,7 +689,7 @@ img {
 /* Start Footer  */
 
 .footer {
-  background-image: url(images/bg-footer.png);
+  background-image: url("/images/bg-footer.png");
   background-size: cover;
 }
 

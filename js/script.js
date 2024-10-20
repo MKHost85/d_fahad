@@ -24,6 +24,7 @@ const dateEvenet = document.getElementById("dateEvenet");
 const eventLocation = document.getElementById("eventLocation");
 
 const eventSection = document.querySelector(".footer .event")
+const speakers = document.querySelector(".speakers .customers")
 
 // const speakersDescription = document.getElementById('speakersDescription');
 // const registerButton = document.getElementById('registerButton');
@@ -33,7 +34,7 @@ const eventSection = document.querySelector(".footer .event")
 
 const translations = {
   en: {
-    buttonLanguageText: "English",
+    buttonLanguageText: "عربي",
     titleMain: "Strategy Experts Forum",
     titleCustom: "8th",
     titleContentOne:
@@ -58,10 +59,11 @@ const translations = {
     dateEvenet: "Date: December 10, 2024 AD - 6 pm",
     eventLocation: "Braira Al Olaya Hotel",
 
-    imageSrc: "images/svg/Eng.svg",
+    imageSrc: "images/svg/KSA.svg",
+
   },
   ar: {
-    buttonLanguageText: "عربي",
+    buttonLanguageText: "English",
     titleMain: "منتدى خبراء الاستراتيجية",
     titleCustom: "الثامن",
     titleContentOne:
@@ -85,7 +87,7 @@ const translations = {
     dateEvenet: "التاريخ: 10 ديسمبر 2024 م - 6 مساءً",
     eventLocation: "Braira Al Olaya Hotel – فندق بريرا العليا",
 
-    imageSrc: "images/svg/KSA.svg",
+    imageSrc: "images/svg/Eng.svg",
   },
 };
 
@@ -162,8 +164,10 @@ function updateElementIds(language) {
 
   if(otherLanguage === "ar") {
     eventSection.classList.remove("ar");
+    speakers.classList.remove("ar");
   }else {
     eventSection.classList.add("ar");
+    speakers.classList.add("ar");
   }
 
 }
